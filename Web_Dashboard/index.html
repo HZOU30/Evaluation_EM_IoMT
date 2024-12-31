@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Web Dashboard</h1>
+        <!-- Visualisation des données -->
+        <div class="card">
+            <h2>Visualisation des données</h2>
+            <p><b>HR :</b> <span id="hr-value">-</span></p>
+            <p><b>SpO2 :</b> <span id="spo2-value">-</span></p>
+            <p><b>State HR :</b> <span id="state-hr-value">-</span></p>
+            <p><b>State SpO2 :</b> <span id="state-spo2-value">-</span></p>
+        </div>
+
+        <!-- Classe de HR -->
+        <div class="card">
+            <h2>Classe de HR</h2>
+            <p id="hr-class">-</p>
+        </div>
+
+        <!-- Paramètres de configuration -->
+        <div class="card">
+            <h2>Saisie des paramètres</h2>
+            <form id="config-form">
+                <label for="hr-ref">HRRef :</label>
+                <input type="number" id="hr-ref" name="hr-ref"><br><br>
+                <label for="spo2-ref">SpO2Ref :</label>
+                <input type="number" id="spo2-ref" name="spo2-ref"><br><br>
+                <button type="button" onclick="updateConfig()">Mettre à jour</button>
+            </form>
+        </div>
+    </div>
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="dashboard.js"></script>
+</body>
+</html>
