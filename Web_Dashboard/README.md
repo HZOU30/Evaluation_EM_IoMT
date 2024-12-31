@@ -7,7 +7,6 @@ Cette partie contient une interface web permettant :
 
 ## Fichiers
 - `index.html` : Structure de la page web.
-- `styles.css` : Style de la page.
 - `dashboard.js` : Scripts JavaScript pour l'interaction avec ThingSpeak.
 
 ## Instructions
