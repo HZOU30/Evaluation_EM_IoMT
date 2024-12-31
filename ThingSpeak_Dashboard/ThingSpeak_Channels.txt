@@ -1,0 +1,27 @@
+# ThingSpeak Channels
+
+## Canal 1 : measurements
+- Channel ID: 2798301
+- Read API Key: 1X9KZPOVW10599E8
+- Write API Key: ID52JN5XCDN3CMYF
+- Fields:
+      1: HR: HeartRate
+      2: SPO2
+
+## Canal 2 : patientState
+- Channel ID: 2798302
+- Read API Key: 8EQQ78NW401MZTXA
+- Write API Key: E7ZM10RP1FA64OX3
+- Fields:
+      1: stateHR
+      2: StateSPO2
+      3: Classification_HR
+
+
+## Canal 3 : configParameters
+- Channel ID: 2798303
+- Read API Key: UVPQLVYVCCM35MF0
+- Write API Key: IROTWCK1CM4Q66XB
+- Fields:
+      1: HRRef
+      2: SpO2REF
