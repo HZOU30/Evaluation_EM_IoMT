@@ -6,13 +6,13 @@ const char* ssid = "Wokwi-GUEST"; // Réseau simulé par Wokwi
 const char* password = ""; // Pas de mot de passe pour le réseau Wokwi-GUEST
 
 // Configuration ThingSpeak
-const char* writeAPIKey = "ID52JN5XCDN3CMYF"; // Clé API pour écrire dans measurements
-const char* readAPIKey = "8EQQ78NW401MZTXA";  // Clé API pour lire depuis patientState
+const char* writeAPIKey = "5W2MK029KFJVZOB6"; // Clé API pour écrire dans measurements
+const char* readAPIKey = "8ZLI37R69VL5QOR6J";  // Clé API pour lire depuis patientState
 const char* server = "http://api.thingspeak.com";
 
 // IDs des canaux
-const int channelID_measurements = 2798301;
-const int channelID_patientState = 2798302;
+const int channelID_measurements = 2794663;
+const int channelID_patientState = 22798918;
 
 // Variables pour les données
 float HR = 75.0; // Exemple de valeur HR (peut être simulée ou mesurée)
