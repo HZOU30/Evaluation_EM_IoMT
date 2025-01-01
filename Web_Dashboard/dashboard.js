@@ -65,4 +65,4 @@ async function updateConfig() {
 
 // Charger les données au démarrage
 fetchData();
-setInterval(fetchData, 15000); // Met à jour toutes les 15 secondes
+setInterval(fetchData, 10000); // Met à jour toutes les 10 secondes
