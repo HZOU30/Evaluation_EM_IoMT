@@ -1,8 +1,8 @@
 const readAPIKey = '1X9KZPOVW10599E8'; // Clé pour lire les données
-const writeAPIKey = 'E7ZM10RP1FA64OX3'; // Clé pour écrire les données
-const channelMeasurements = 2798301; // ID du canal measurements
-const channelPatientState = 2798302; // ID du canal patientState
-const channelConfigParameters = 2798303; // ID du canal configParameters
+const writeAPIKey = 'OC0Z7HUOG8CSJAEV'; // Clé pour écrire les données
+const channelMeasurements = 2794663; // ID du canal measurements
+const channelPatientState = 2798918; // ID du canal patientState
+const channelConfigParameters = 2798919; // ID du canal configParameters
 
 // Fonction pour récupérer les données
 async function fetchData() {
