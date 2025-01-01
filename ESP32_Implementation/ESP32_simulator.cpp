@@ -7,12 +7,12 @@ const char* password = ""; // Pas de mot de passe pour le réseau Wokwi-GUEST
 
 // Configuration ThingSpeak
 const char* writeAPIKey = "5W2MK029KFJVZOB6"; // Clé API pour écrire dans measurements
-const char* readAPIKey = "8ZLI37R69VL5QOR6J";  // Clé API pour lire depuis patientState
+const char* readAPIKey = "ZLI37R69VL5QOR6J";  // Clé API pour lire depuis patientState
 const char* server = "http://api.thingspeak.com";
 
 // IDs des canaux
 const int channelID_measurements = 2794663;
-const int channelID_patientState = 22798918;
+const int channelID_patientState = 2798918;
 
 // Variables pour les données
 float HR = 75.0; // Exemple de valeur HR (peut être simulée ou mesurée)
@@ -72,6 +72,7 @@ void readPatientState() {
   HTTPClient http;
   String url = String(server) + "/channels/" + String(channelID_patientState) +
                "/feeds.json?api_key=" + readAPIKey + "&results=1";
+  Serial.println("URL de requête : " + url); // Afficher l'URL pour vérification
   http.begin(url);
   int httpResponseCode = http.GET();
 
@@ -84,9 +85,10 @@ void readPatientState() {
   http.end();
 }
 
+
 // Simuler des données aléatoires pour les capteurs
 void simulateSensorData() {
-  HR = random(60, 100); // Générer des valeurs aléatoires entre 60 et 100 pour HR
+  HR = random(60, 140); // Générer des valeurs aléatoires entre 60 et 100 pour HR
   SpO2 = random(90, 100); // Générer des valeurs aléatoires entre 90 et 100 pour SpO2
   Serial.print("HR simulé : ");
   Serial.println(HR);
