@@ -19,7 +19,8 @@ async function fetchData() {
 
     // Extraire les données du canal measurements
     const hrValue = measurementsData.feeds[0]?.field1 || "-";
-    const spo2Value = measurementsData.feeds[0]?.field2 || "-";
+    const spo2Value = (measurementsData.feeds[0]?.field2 || "-").replace(/[^0-9.]/g, "");
+
 
     // Extraire les données du canal patientState
     const stateHR = patientStateData.feeds[0]?.field1 || "-";
